@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>SimpleTomlConfig</AssemblyName>
+    <RootNamespace>SimpleTomlConfig</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,9 +15,24 @@
   <PropertyGroup>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <PackageId>SimpleTomlConfig</PackageId>
-    <Version>1.0.0</Version>
+    <Title>SimpleTomlConfig</Title>
+    <Version>1.1.0</Version>
     <Authors>Ryong</Authors>
-    <Description>A simple TOML configuration manager for .NET applications.</Description>
+    <Company>JDTEK</Company>
+    <Description>A lightweight .NET library for loading, saving, and generating TOML configuration files with simple attribute-based section, property, and ignore mapping.</Description>
+    <Summary>Simple attribute-based TOML configuration management for .NET.</Summary>
+    <PackageTags>toml;config;configuration;settings;dotnet;net8</PackageTags>
+    <PackageProjectUrl>https://github.com/JDTEKRepos/SimpleTomlConfig</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JDTEKRepos/SimpleTomlConfig.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release with TomlConfig, TomlSection, TomlProperty, TomlIgnore, Load, Save, and SaveAs support.</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\README.en.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
